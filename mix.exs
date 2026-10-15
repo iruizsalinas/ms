@@ -13,7 +13,8 @@ defmodule Ms.MixProject do
       deps: deps(),
       description: description(),
       package: package(),
-      source_url: @source_url
+      source_url: @source_url,
+      docs: [source_ref: "v#{@version}"]
     ]
   end
 

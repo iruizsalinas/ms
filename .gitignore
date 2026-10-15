@@ -6,3 +6,6 @@
 erl_crash.dump
 *.ez
 ms-*.tar
+
+.release/
+__pycache__/

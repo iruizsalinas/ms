@@ -44,6 +44,8 @@ Ms.parse("nope")    #=> :error
 Ms.parse!("2h")     #=> 7200000
 ```
 
+Parsing is case-insensitive. Input is limited to 100 bytes, including whitespace.
+
 ### Formatting
 
 ```elixir
@@ -65,3 +67,4 @@ Ms.format(60000)                #=> "1m"
 | months       | mo    | mo, month(s)                    |
 | years        | y     | y, yr, yrs, year(s)             |
 
+A year is 365.25 days. A month is 30.4375 days, not a calendar month.

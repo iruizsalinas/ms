@@ -14,6 +14,7 @@ defmodule Ms.MixProject do
       description: description(),
       package: package(),
       source_url: @source_url,
+      test_coverage: [summary: [threshold: 100]],
       docs: [source_ref: "v#{@version}"]
     ]
   end
